@@ -1,0 +1,6 @@
+{
+  "search.exclude": { "esp-idf-examples/**": true },
+  "clangd.arguments": [
+    "--query-driver=/Users/szhov/.espressif/tools/**/bin/*-esp-elf-gcc"
+  ]
+}

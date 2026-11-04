@@ -1,0 +1,2 @@
+# Чип за замовчуванням. Змінити: make chip CHIP=esp32
+CONFIG_IDF_TARGET="esp32s3"

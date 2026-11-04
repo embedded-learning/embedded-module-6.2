@@ -1,0 +1,14 @@
+# clangd не розуміє частину прапорців компілятора ESP (gcc) — прибираємо їх, щоб підказки працювали.
+CompileFlags:
+  CompilationDatabase: build
+  Remove:
+    - -march=*
+    - -mabi=*
+    - -mcpu=*
+    - -mtune=*
+    - -mlongcalls
+    - -fno-shrink-wrap
+    - -fstrict-volatile-bitfields
+    - -fno-tree-switch-conversion
+    - -fzero-init-padding-bits=*
+    - -fno-malloc-dce
